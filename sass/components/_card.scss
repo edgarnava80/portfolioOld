@@ -1,0 +1,58 @@
+.card {
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    &__side {
+        background-color: #abc;
+        height: 20rem;
+        width: 25rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        &--front {
+            background-color: $color-white;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &--back {
+            transform: rotateY(180deg);
+            position: relative;
+            .degree {
+                font-family: $font-titles;
+                font-weight: 700;
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+                text-align: center;
+                color: $color-white;
+                @include cent;
+            }
+        }
+    }
+    .front-one {
+        background-image: url(../media/mgsm-img.png);
+    }
+    .back-one {
+        background-image: linear-gradient(to right bottom, rgba($card-color-1, .8), rgba($card-color-2, .5));
+    }
+    .front-two {
+        background-image: url(../media/swin-img.png);
+    }
+    .back-two {
+        background-image: linear-gradient(to right bottom, rgba($card-color-3, .8), rgba($card-color-4, .5));
+    }
+    .front-three {
+        background-image: url(../media/tec-img.png);
+    }
+    .back-three {
+        background-image: linear-gradient(to right bottom, rgba($card-color-5, .8), rgba($card-color-6, .5));
+    }
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+}

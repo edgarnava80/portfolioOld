@@ -1,0 +1,213 @@
+.section-about {
+    position: relative;
+    padding: 1rem;
+    height: 100%;
+    font-size: $default-size;
+}
+
+.cb-shape {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1rem;
+}
+
+.open-cb {
+    font-family: $font-main;
+    font-weight: lighter;
+    font-size: 20rem;
+    color: grey;
+    height: 100%;
+    line-height: 23rem;
+    justify-self: end;
+}
+
+.close-cb {
+    font-family: $font-main;
+    font-weight: lighter;
+    font-size: 20rem;
+    color: grey;
+    height: 100%;
+    line-height: 23rem;
+    justify-self: start;
+}
+
+.about__shape {
+    width: 20rem;
+    height: 20rem;
+    //margin: 5% auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    @include cent;
+}
+
+.layer-shape {
+    width: 21rem;
+    height: 21rem;
+    background-color: white;
+    //margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    @include cent;
+}
+
+.border-shape {
+    width: 23rem;
+    height: 23rem;
+    background-color: grey;
+    margin: 5% auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+}
+
+.about__img {
+    width: 100%;
+}
+
+#about_page {
+    background-image: linear-gradient(rgba($color-white, .3), rgba($color-grey-light, .2));
+}
+
+.about-intro {
+    margin: 0 auto;
+    text-align: center;
+    height: 60vh;
+    width: 80%;
+}
+
+.about-heading {
+    font-family: $font-titles;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-image: linear-gradient(to right, $color-three, $color-three-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .1rem;
+    transition: all .2s;
+}
+
+.about-description {
+    margin: 5%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.experience {
+    height: 20rem;
+    line-height: 20rem;
+}
+
+.exp-container {
+    /*box-shadow: 0 3rem 6rem rgba($color-black, .2);
+    background-color: rgba($color-white, .7);
+    border-radius: 3px;
+    width: 100%;*/
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    //grid-template-rows: [pic-start] 1fr [pic-end intro-start] 1fr [intro-end] repeat(4, [exp-start] 1fr [exp-end]) repeat(3, [edu-start] 1fr [edu-end]);
+    //grid-template-columns: repeat(8, [col-start] 1fr [col-end]);
+    grid-row-gap: 2rem;
+    grid-column-gap: 5rem;
+    justify-items: center;
+    justify-self: center;
+}
+
+@media (min-width: 600px) {
+    .exp-container {
+        grid-column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-heading {
+        font-size: 2rem;
+    }
+    .ace {
+        justify-self: end;
+    }
+    .aor {
+        justify-self: start;
+    }
+    .invex {
+        justify-self: end;
+    }
+    .baz {
+        justify-self: start;
+    }
+}
+
+@media (min-width: 900px) {
+    .exp-container {
+        grid-column-gap: 6rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .edu-container {
+        grid-template-columns: repeat(3, 1fr);
+        //height: 21rem;
+    }
+    .about-heading {
+        font-size: 2.5rem;
+    }
+    .ace {
+        justify-self: end;
+    }
+    .aor {
+        justify-self: start;
+    }
+    .invex {
+        justify-self: end;
+    }
+    .baz {
+        justify-self: start;
+    }
+}
+
+@media (min-width: 1200px) {
+    .exp-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .about-heading {
+        font-size: 3rem;
+    }
+}
+
+.ace {
+    background-image: linear-gradient(to right bottom, rgba($color-white, 1), rgba($color-white, .8), rgba($color-one-light, .5)), url(../media/ace-img.jpg);
+    @include bkimg;
+}
+
+.aor {
+    background-image: linear-gradient(to right bottom, rgba($color-white, 1), rgba($color-white, .8), rgba($color-three-light, .5)), url(../media/aor-img.jpg);
+    @include bkimg;
+}
+
+.invex {
+    background-image: linear-gradient(to right bottom, rgba($color-white, .9), rgba($color-white, .8), rgba($color-one-light, .5)), url(../media/invex-img.png);
+    @include bkimg;
+}
+
+.baz {
+    background-image: linear-gradient(to right bottom, rgba($color-white, 1), rgba($color-white, .8), rgba($color-three-light, .5)), url(../media/baz-img.png);
+    @include bkimg;
+}
+
+.education {
+    margin-top: 2rem;
+    height: 15rem;
+    line-height: 15rem;
+}
+
+.edu-container {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 94%;
+    //height: 70rem;
+    display: grid;
+    grid-gap: 2rem;
+    justify-items: center;
+    border: .5rem solid grey;
+}

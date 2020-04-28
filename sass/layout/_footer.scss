@@ -1,0 +1,19 @@
+.footer {
+    width: 100vw;
+    height: 30rem;
+    background-image: linear-gradient(to right, rgba($color-black, .2), rgba($color-black, .8));
+    &__image {
+        width: 25%;
+        height: 25rem;
+        display: inline-block;
+        //background-image: url(../media/img4.jpg);
+        &--pic {
+            width: 100%;
+        }
+    }
+    &__text {
+        width: 70%;
+        height: 25rem;
+        display: inline-block;
+    }
+}

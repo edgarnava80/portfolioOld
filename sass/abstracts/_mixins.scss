@@ -1,0 +1,23 @@
+@mixin cent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin bkimg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20rem;
+    width: 30rem;
+    padding: 2rem 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(black, .2);
+}

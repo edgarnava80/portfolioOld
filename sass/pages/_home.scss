@@ -1,0 +1,38 @@
+.header {
+    height: 100vh;
+    width: 100vw;
+    //z-index: -1;
+    //opacity: .7;
+    animation: 2s backImg .5s ease-out forwards;
+}
+
+.letter {
+    //font-family: $font-main;
+    font-size: 10rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    @include cent;
+    &-e {
+        color: $color-one-dark;
+        animation: 2s moveE .5s forwards;
+    }
+    &-n {
+        color: $color-two-dark;
+        animation: 2s moveN .5s forwards;
+    }
+}
+
+.text {
+    font-family: $font-main;
+    font-weight: 400;
+    color: $color-white;
+    opacity: 0;
+    display: inline-block;
+    width: fit-content;
+    @include cent;
+    animation: 3s moveText .5s;
+}

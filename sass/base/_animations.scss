@@ -1,0 +1,55 @@
+@keyframes backImg {
+    0% {
+        background-image: linear-gradient(rgba($color-white, .9), rgba($color-white, .9)), url(../media/back1.jpeg);
+    }
+    100% {
+        background-image: linear-gradient(rgba($color-one-light, .9), rgba($color-two-light, .9)), url(../media/back1.jpeg);
+    }
+}
+
+@keyframes dispBut {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveE {
+    100% {
+        top: 0;
+        left: 0;
+        color: $color-two-dark;
+        transform: translate(1%, 1%);
+        opacity: 1;
+    }
+}
+
+@keyframes moveN {
+    100% {
+        top: 100%;
+        left: 100%;
+        color: $color-one-dark;
+        transform: translate(-105%, -100%);
+        opacity: 1;
+    }
+}
+
+@keyframes moveText {
+    0% {
+        opacity: 0;
+        font-size: 2rem;
+    }
+    25% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .75;
+    }
+    75% {
+        opacity: 1;
+        font-size: 5rem;
+    }
+    100% {
+        opacity: 0;
+        font-size: 1rem;
+    }
+}
