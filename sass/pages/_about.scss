@@ -52,8 +52,8 @@
 }
 
 .border-shape {
-    width: 23rem;
-    height: 23rem;
+    width: 22.5rem; 
+    height: 22.5rem;
     background-color: grey;
     margin: 5% auto;
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -205,9 +205,9 @@
     margin: 0 auto;
     padding: 2rem;
     max-width: 94%;
-    //height: 70rem;
+    background-color: $color-white;
     display: grid;
     grid-gap: 2rem;
     justify-items: center;
-    border: .5rem solid grey;
+    border: .3rem solid grey;
 }
